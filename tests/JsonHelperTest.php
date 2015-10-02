@@ -35,7 +35,7 @@ class JsonHelperTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("def",$obj->projectTasks[1]);
         $this->assertNotNull($obj->model1);
         $this->assertEquals("ABC",$obj->model1->field1);
-        $this->assertObjectNotHasAttribute("field2",$obj->model1);
+        $this->assertObjectHasAttribute("field2",$obj->model1);
         $this->assertEquals("GHI",$obj->model1->field3);
     }
 }
