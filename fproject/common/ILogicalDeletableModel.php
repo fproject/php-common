@@ -22,10 +22,22 @@ namespace fproject\common;
 interface ILogicalDeletableModel
 {
     /**
-     * Get the query condition to determine the model is logically deleted
-     * @return string the query condition
+     * Get the query criteria to determine the model is logically deleted
+     * @return array the query criteria. See the following examples:
+     * Example 1:
+     * ```php
+     *      ['status=1']
+     * ```
+     * Example 2:
+     * ```php
+     *      ['condition'=>'status=1']
+     * ```
+     * Example 3:
+     * ```php
+     *      ['condition'=>'status=:deleted', 'param'=> [':deleted' => 1]]
+     * ```
      */
-    public function getIsLogicalDeletedCondition();
+    public function getIsLogicalDeletedCriteria();
 
     /**
      * Determine if the current model is logically deletable
