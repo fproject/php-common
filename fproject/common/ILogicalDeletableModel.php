@@ -22,7 +22,7 @@ namespace fproject\common;
 interface ILogicalDeletableModel
 {
     /**
-     * Get the query criteria to determine the model is logically deleted
+     * Get the query criteria to determine the model is not logically deleted
      * @return array the query criteria. See the following examples:
      * Example 1:
      * ```php
@@ -37,7 +37,7 @@ interface ILogicalDeletableModel
      *      ['condition'=>'status=:deleted', 'param'=> [':deleted' => 1]]
      * ```
      */
-    public function getIsLogicalDeletedCriteria();
+    public static function getIsNotDeletedCriteria();
 
     /**
      * Determine if the current model is logically deletable
