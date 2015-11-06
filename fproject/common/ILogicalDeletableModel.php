@@ -25,15 +25,15 @@ interface ILogicalDeletableModel
      * Get the query criteria to determine the model is logically deleted
      * @return array the query criteria. See the following examples:
      * Example 1:
-     * ```
+     * ```php
      *      ['status=1']
      * ```
      * Example 2:
-     * ```
+     * ```php
      *      ['condition'=>'status=1']
      * ```
      * Example 3:
-     * ```
+     * ```php
      *      ['condition'=>'status=:deleted', 'param'=> [':deleted' => 1]]
      * ```
      */
