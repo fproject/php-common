@@ -22,6 +22,12 @@ namespace fproject\common;
 interface ILogicalDeletableModel
 {
     /**
+     * Get the query condition to determine the model is logically deleted
+     * @return string the query condition
+     */
+    public function getIsLogicalDeletedCondition();
+
+    /**
      * Determine if the current model is logically deletable
      * @return bool TRUE if the current model is logically deletable
      */
