@@ -16,6 +16,9 @@
 // limitations under the License.
 //
 ///////////////////////////////////////////////////////////////////////////////
+
+namespace fproject\common;
+
 interface ILogicalDeletableModel
 {
     /**
