@@ -3,7 +3,7 @@
     "description": "Common PHP components used in several projects of F-Project",
     "keywords": ["fproject", "php", "common"],
     "homepage": "https://github.com/fproject/php-common",
-    "type": "yii2-extension",
+    "type": "library",
     "license": "Apache License 2.0",
     "support" : {
       "issues" : "https://github.com/fproject/php-common/issues"
