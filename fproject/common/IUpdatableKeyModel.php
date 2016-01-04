@@ -26,7 +26,7 @@ interface IUpdatableKeyModel
      * This refers to the primary key value that is populated from the active record
      * after executing a find method (e.g. find(), findOne()).
      * The value remains unchanged even if the primary key attribute is manually assigned with a different value.
-     * @return mixed the old primary key value. An array (column name=>column value) is returned if the primary key is composite.
+     * @return array The old primary key value. An array (column name=>column value) is returned if the primary key is composite.
      * If primary key is not defined, null will be returned.
      */
     public function getOldKey();
