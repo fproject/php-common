@@ -94,7 +94,7 @@ class JsonHelper
         if (is_object($data)) {
             if($data instanceof DateTime)
             {
-                $data = $data->format(DATE_ISO8601);
+                $data = DateTimeHelper::toISO8601UTC($data);
             } elseif ($data instanceof JsonSerializable) {
                 $data = $data->jsonSerialize();
             } else {
