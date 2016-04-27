@@ -47,6 +47,12 @@ interface ILogicalDeletableModel
     public function isLogicalDeletable();
 
     /**
+     * Determine if the current model is being logically deleting
+     * @return bool TRUE if the current model is being logically deleting
+     */
+    public function isLogicalDeleting();
+
+    /**
      * Delete the model logically
      * @param mixed $pk primary key value(s). Use array for multiple primary keys. For composite key, each key value must be an array (column name=>column value).
      * @param mixed $condition query condition or criteria.
