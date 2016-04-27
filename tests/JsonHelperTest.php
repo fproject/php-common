@@ -1,5 +1,4 @@
 <?php
-use fproject\amqp\ActivityNoticeSerializer;
 use fproject\common\utils\JsonHelper;
 include_once('TestModel01.php');
 include_once('TestModel02.php');

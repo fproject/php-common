@@ -11,6 +11,9 @@
  *
  * @author Bui Sy Nguyen <nguyenbs@gmail.com>
  */
+
+namespace fproject\common\utils;
+
 class DateTimeHelper
 {
     const DATE_ISO8601_UTC = "Y-m-d\TH:i:s";
@@ -22,7 +25,7 @@ class DateTimeHelper
      */
     public static function toISO8601UTC($d)
     {
-        if($d instanceof DateTime)
+        if($d instanceof \DateTime)
             return $d->format(self::DATE_ISO8601_UTC);
         return $d;
     }
